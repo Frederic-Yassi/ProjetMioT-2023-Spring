@@ -1,0 +1,819 @@
+{
+	"info": {
+		"_postman_id": "de7d1231-6bda-4f07-a6a0-ee0a21f3df68",
+		"name": "Requêtes MiOT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15401332"
+	},
+	"item": [
+		{
+			"name": "testApi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addParamsToHeader",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/testApi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"testApi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testBdd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/testBdd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"testBdd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/get?name=admin&pwd=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"get"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "admin"
+						},
+						{
+							"key": "pwd",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/get/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserInfo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/get/data?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"get",
+						"data"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/add?email=hey@gd.fr&name=hey&pwd=pouuu&role=eboueur&num=00000000&address=Asie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"add"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "hey@gd.fr"
+						},
+						{
+							"key": "name",
+							"value": "hey"
+						},
+						{
+							"key": "pwd",
+							"value": "pouuu"
+						},
+						{
+							"key": "role",
+							"value": "eboueur"
+						},
+						{
+							"key": "num",
+							"value": "00000000"
+						},
+						{
+							"key": "address",
+							"value": "Asie"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/delete?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyUserEmail",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/modify/email?id=2&email=itachi@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"modify",
+						"email"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "email",
+							"value": "itachi@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyUserName",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/modify/name?id=2&name=ruthau",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"modify",
+						"name"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "name",
+							"value": "ruthau"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyUserPwd",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/modify/pwd?id=2&pwd=pwdtest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"modify",
+						"pwd"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "pwd",
+							"value": "pwdtest"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyUserRole",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/modify/role?id=2&role=test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"modify",
+						"role"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "role",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyUserNum",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/modify/num?id=2&num=54600",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"modify",
+						"num"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "num",
+							"value": "54600"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyUserAddress",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/user/modify/address?id=2&address=Port-Bouet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"user",
+						"modify",
+						"address"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "address",
+							"value": "Port-Bouet"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authentification",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/auth?name=boih&pwd=iubzcbk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"auth"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "boih"
+						},
+						{
+							"key": "pwd",
+							"value": "iubzcbk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTrashInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/trash/get/data?address=9 Rue louis arretche",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"trash",
+						"get",
+						"data"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "9 Rue louis arretche"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTrashs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/trash/get/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"trash",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTrash",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/trash/add?address=9 Rue louis arretche&level=54&state=Work",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"trash",
+						"add"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "9 Rue louis arretche"
+						},
+						{
+							"key": "level",
+							"value": "54"
+						},
+						{
+							"key": "state",
+							"value": "Work"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTrash",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/api/trash/delete?address=13 Rue louis arretche",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"trash",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "13 Rue louis arretche"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyTrashLevel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/trash/modify/level?address=9 Rue Louis arretche&level=70",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"trash",
+						"modify",
+						"level"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "9 Rue Louis arretche"
+						},
+						{
+							"key": "level",
+							"value": "70"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyTrashAddress",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/trash/modify/address?oldAddress=9 Rue louis arretche&newAddress=13 Rue louis arretche",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"trash",
+						"modify",
+						"address"
+					],
+					"query": [
+						{
+							"key": "oldAddress",
+							"value": "9 Rue louis arretche"
+						},
+						{
+							"key": "newAddress",
+							"value": "13 Rue louis arretche"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifyTrashState",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/api/trash/modify/state?address=13 Rue louis arretche&state=no work",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"api",
+						"trash",
+						"modify",
+						"state"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "13 Rue louis arretche"
+						},
+						{
+							"key": "state",
+							"value": "no work"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
