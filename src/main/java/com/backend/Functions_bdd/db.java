@@ -14,10 +14,17 @@ import java.util.Calendar;
 
 public class db {
     static Connection con = null ;
+    static String env ="docker";
+
     public static void testConnect()throws Exception {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3308/mydb?characterEncoding=utf8", "root","root");
+            if(env=="docker"){
+                con = (Connection) DriverManager.getConnection("jdbc:mysql://maria_db:3306/mydb?characterEncoding=utf8","dev","passwordev");
+            }
+            else{
+                con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:8082/mydb?characterEncoding=utf8","root","root");
+            }
             System.out.println("connection base de données ok");
         } catch (Exception e) {
             System.out.println("Erreur de connection");
@@ -28,11 +35,15 @@ public class db {
     public static void connect(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3308/mydb?characterEncoding=utf8", "root","root");
-
+            if(env=="docker"){
+                con = (Connection) DriverManager.getConnection("jdbc:mysql://maria_db:3306/mydb?characterEncoding=utf8","dev","passwordev");
+            }
+            else{
+                con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:8082/mydb?characterEncoding=utf8","root","root");
+            }
         } catch (Exception e) {
-            System.out.println(e);
             System.out.println("Erreur de connection");
+            System.out.println(e);
         }
         System.out.println("connection base de données ok");
     }

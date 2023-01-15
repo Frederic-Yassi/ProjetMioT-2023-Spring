@@ -1,7 +1,7 @@
-/home/frederic/Documents/ProjetMioT-2023-Spring/src/main/java/com/backend/controller/UserController.java
-/home/frederic/Documents/ProjetMioT-2023-Spring/src/main/java/com/backend/ProjetMioTSpringApplication.java
-/home/frederic/Documents/ProjetMioT-2023-Spring/src/main/java/com/backend/autres/Trash.java
-/home/frederic/Documents/ProjetMioT-2023-Spring/src/main/java/com/backend/autres/User.java
-/home/frederic/Documents/ProjetMioT-2023-Spring/src/main/java/com/backend/controller/MainController.java
-/home/frederic/Documents/ProjetMioT-2023-Spring/src/main/java/com/backend/controller/TrashController.java
-/home/frederic/Documents/ProjetMioT-2023-Spring/src/main/java/com/backend/Functions_bdd/db.java
+/home/frederic/Documents/Projet/ProjetMioT-2023-Spring/src/main/java/com/backend/controller/MainController.java
+/home/frederic/Documents/Projet/ProjetMioT-2023-Spring/src/main/java/com/backend/autres/User.java
+/home/frederic/Documents/Projet/ProjetMioT-2023-Spring/src/main/java/com/backend/Functions_bdd/db.java
+/home/frederic/Documents/Projet/ProjetMioT-2023-Spring/src/main/java/com/backend/controller/TrashController.java
+/home/frederic/Documents/Projet/ProjetMioT-2023-Spring/src/main/java/com/backend/autres/Trash.java
+/home/frederic/Documents/Projet/ProjetMioT-2023-Spring/src/main/java/com/backend/ProjetMioTSpringApplication.java
+/home/frederic/Documents/Projet/ProjetMioT-2023-Spring/src/main/java/com/backend/controller/UserController.java
