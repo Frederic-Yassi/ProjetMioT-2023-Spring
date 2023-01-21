@@ -1,4 +1,4 @@
-package com.backend.autres;
+package com.backend.entites;
 
 public class User {
     int id;

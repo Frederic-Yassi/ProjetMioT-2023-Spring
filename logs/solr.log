@@ -1,0 +1,44 @@
+INFO  - 2023-01-17 00:00:05.286; com.backend.ProjetMioTSpringApplication; This is an informational log message.
+INFO  - 2023-01-17 00:26:38.613; com.backend.ProjetMioTSpringApplication; This is an informational log message.
+INFO  - 2023-01-18 00:49:12.459; com.backend.ProjetMioTSpringApplication; This is an informational log message.
+INFO  - 2023-01-18 00:56:40.965; com.backend.ProjetMioTSpringApplication; This is an informational log message.
+DEBUG - 2023-01-18 00:57:13.404; com.backend.controller.MainController; [2023/01/18 00:57:13] Test connexion à l'API 
+DEBUG - 2023-01-18 01:09:49.015; com.backend.controller.MainController; [2023/01/18 01:09:49] Test connexion à la BDD 
+DEBUG - 2023-01-18 01:09:52.512; com.backend.controller.MainController; [2023/01/18 01:09:52] Test connexion à la BDD 
+INFO  - 2023-01-18 01:14:28.614; com.backend.ProjetMioTSpringApplication; This is an informational log message.
+DEBUG - 2023-01-18 01:16:28.456; com.backend.controller.MainController; authentification d'un utilisateur 
+DEBUG - 2023-01-18 01:16:39.265; com.backend.controller.MainController; authentification d'un utilisateur 
+DEBUG - 2023-01-18 01:16:44.657; com.backend.controller.MainController; authentification d'un utilisateur 
+DEBUG - 2023-01-18 12:21:55.162; com.backend.controller.MainController; Test connexion à l'API 
+DEBUG - 2023-01-18 12:22:08.358; com.backend.controller.MainController; Test connexion à la BDD 
+DEBUG - 2023-01-18 12:22:08.619; com.backend.Functions_bdd.db; base de données ko
+ERROR - 2023-01-18 12:22:08.619; com.backend.controller.MainController; com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+DEBUG - 2023-01-18 12:23:38.773; com.backend.controller.MainController; Test connexion à la BDD 
+DEBUG - 2023-01-18 12:24:00.246; com.backend.Functions_bdd.db; Impossible de se connecter à la BDD
+ERROR - 2023-01-18 12:24:00.246; com.backend.controller.MainController; com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+DEBUG - 2023-01-18 12:24:13.720; com.backend.Functions_bdd.db; Impossible de se connecter à la BDD
+ERROR - 2023-01-18 12:24:13.721; com.backend.controller.MainController; com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+DEBUG - 2023-01-18 12:25:03.897; com.backend.Functions_bdd.db; Impossible de se connecter à la BDD
+ERROR - 2023-01-18 12:25:03.898; com.backend.controller.TrashController; com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+DEBUG - 2023-01-18 12:25:48.279; com.backend.Functions_bdd.db; connection à base de données ok
+DEBUG - 2023-01-18 12:25:48.509; com.backend.Functions_bdd.db; deconnection à base de données ok
+DEBUG - 2023-01-18 12:25:56.997; com.backend.Functions_bdd.db; connection à base de données ok
+DEBUG - 2023-01-18 12:25:57.091; com.backend.Functions_bdd.db; deconnection à base de données ok
+INFO  - 2023-01-18 12:25:57.092; com.backend.controller.UserController; recuperation des informations de l'utilisateur : 2
+DEBUG - 2023-01-18 12:26:05.045; com.backend.Functions_bdd.db; connection à base de données ok
+DEBUG - 2023-01-18 12:26:05.049; com.backend.Functions_bdd.db; deconnection à base de données ok
+INFO  - 2023-01-18 12:26:05.049; com.backend.controller.UserController; recuperation des informations de l'utilisateur : 50
+DEBUG - 2023-01-18 12:26:32.967; com.backend.Functions_bdd.db; connection à base de données ok
+DEBUG - 2023-01-18 12:26:32.972; com.backend.Functions_bdd.db; deconnection à base de données ok
+INFO  - 2023-01-18 12:26:32.973; com.backend.controller.UserController; recherche Id
+DEBUG - 2023-01-21 12:30:52.475; com.backend.Functions_bdd.db; connection à base de données ok
+DEBUG - 2023-01-21 12:30:52.799; com.backend.Functions_bdd.db; deconnection à base de données ok
+INFO  - 2023-01-21 12:30:52.799; com.backend.controller.UserController; recuperation des utilisateurs
